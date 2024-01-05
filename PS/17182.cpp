@@ -29,7 +29,7 @@ void floyd()
 void DFS(int x, int d, int cnt)
 {
 	vis[x] = true;
-	
+
 	if(res < d)
 	{
 		return;

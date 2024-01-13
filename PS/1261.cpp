@@ -34,7 +34,7 @@ void Dijkstra()
 		int cost = get<0>(pq.top());
 		pq.pop();
 
-		if(dist[curx][cury] != cost)
+		if(dist[curx][cury] < cost)
 		{
 			continue;
 		}
@@ -76,6 +76,15 @@ int main(void)
     }
 
 	Dijkstra();
+
+	for(int i = 1; i <= n ; i++)
+	{
+		for(int j = 1; j <= m; j++)
+		{
+			cout << dist[i][j] << " ";
+		}
+		cout << "\n";
+	}
 
 	cout << dist[n][m];
 

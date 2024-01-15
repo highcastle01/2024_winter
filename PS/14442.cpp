@@ -47,7 +47,7 @@ void BFS()
 
 			if(nw > k || dist[nx][ny][nw] > 0)
 			{
-				continue; //벽부수기 횟수제한 넘거나, 이미 다른경로에서 그만큼 벽부수기를 했을 경우(지금 위치가 최단경로가 아닌경우)
+				continue; //벽부수기 횟수제한 넘거나, 이미 이 경로를 탐색했을 경우
 			}
 			dist[nx][ny][nw] = dist[x][y][w] + 1;
 			q.push({nx, ny, nw});

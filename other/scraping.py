@@ -47,7 +47,6 @@ def scrap(searchKey):
 
     images = driver.find_elements(By.CSS_SELECTOR, ".rg_i.Q4LuWd")
     count = 1
-    i = 0
     dir = "./" + searchKey
     createDirectory(dir)
 
